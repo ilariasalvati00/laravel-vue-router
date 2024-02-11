@@ -1,15 +1,8 @@
 <script>
-import AppComponent from "./components/AppComponent.vue"
-import EventList from "./components/EventList.vue"
-
 import axios from 'axios'; //importo Axios
 import { store } from "./store.js" //state management
 
 export default {
-	components: {
-		AppComponent,
-		EventList
-	},
 	data() {
 		return {
 			store
@@ -34,9 +27,8 @@ export default {
 </script>
 
 <template>
-	<main>
-		<EventList></EventList>
-	</main>
+	<header>Header</header>
+	<router-view></router-view>
 </template>
 
 <style lang="scss">
