@@ -5,7 +5,17 @@ import { store } from "./store.js" //state management
 export default {
 	data() {
 		return {
-			store
+			store,
+			menuItems: [
+				{
+					routeName: "home",
+					label: "Homepage"
+				},
+				{
+					routeName: "about",
+					label: "Qualcosa su di noi"
+				}
+			]
 		}
 	},
 	mounted() {
@@ -27,7 +37,10 @@ export default {
 </script>
 
 <template>
-	<header>Header</header>
+	<header>
+		<router-link v-for="(item, index) in menuItems" :key="index" :to="{ name: item.routeName }" class="nav-link">
+			{{ item.label }}</router-link>
+	</header>
 	<router-view></router-view>
 </template>
 
@@ -37,6 +50,11 @@ export default {
 </style>
 
 <style scoped lang="scss">
+header {
+	background-color: lightblue;
+	color: black;
+}
+
 // importo variabili
 // @use './styles/partials/variables' as *;
 
