@@ -32,7 +32,7 @@ export default {
             <h5 class="card-title">{{ name }}</h5>
             <p class="card-text">Data dell'evento: {{ date }}</p>
             <p class="card-text">Numero di posti disponibili: {{ tickets }}</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-primary">Dettagli evento</a>
         </div>
     </div>
 </template>
