@@ -27,10 +27,13 @@ export default {
 </script>
 
 <template>
-    <div>
-        <h1>{{ name }}</h1>
-        <p>Data dell'evento: {{ date }}</p>
-        <p>Numero di posti disponibili: {{ tickets }}</p>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{ name }}</h5>
+            <p class="card-text">Data dell'evento: {{ date }}</p>
+            <p class="card-text">Numero di posti disponibili: {{ tickets }}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
     </div>
 </template>
 
@@ -44,6 +47,6 @@ div {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    margin: 1rem;
 }
 </style>

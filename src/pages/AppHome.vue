@@ -17,4 +17,11 @@ export default {
     </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+main {
+    background-color: black;
+    color: grey;
+    display: flex;
+
+}
+</style>
